@@ -6,7 +6,10 @@ library(ggplot2)
 library(cluster)  
   
 
-data(pluton)
+# data(pluton)
+path <- ".\data\raw"
+file <- "whiskey.csv"
+
 
 semilla <- hclust(distance_trasf_ld, method = "ward.D")
 
