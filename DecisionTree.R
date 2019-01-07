@@ -8,9 +8,9 @@ library(readr)
   
 
 # data(pluton)
-path <- "data/raw/"
-file <- "whiskey.csv"
-whisky <- read_csv(paste(path,file))
+path <- "./data/raw/"
+file <- "whisky.csv"
+whisky <- read_csv(paste(path,file, sep=""))
 
 whiskey_dist <- dist(file)
 
