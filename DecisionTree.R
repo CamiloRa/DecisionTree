@@ -12,10 +12,10 @@ path <- "./data/raw/"
 file <- "whisky.csv"
 whisky <- read_csv(paste(path,file, sep=""))
 
-whiskey_dist <- dist(file)
+whisky_dist <- dist(whisky)
 
 
-semilla <- hclust(distance_trasf_ld, method = "ward.D")
+semilla <- hclust(whisky_dist, method = "ward.D")
 
-plot(semilla, hang = -1)
+plot(semilla)
 
